@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1f29, #3a3b54, #6d6e92);
+    background-size: 500% 500%;
+    animation: bgMove 12s ease infinite;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+     50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.Player-container {
+    margin-bottom: 20px;
+}
+
+video {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.box {
+    width: 340px;
+    height: 150px;
+    margin: aut0;
+    padding: 20px;
+    border-radius: 14px;
+    background:rgba(255,255,255,0.1);
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translatey(20px);
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0px);
+    background: rgba(255,200,120,0.4);
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: #ffb74d;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #222;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+ background: #ffd48f;
+ transform: scale(1.05);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Media Player</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div  class="Player-container">
+    <video id="myVideo" width="640" controls>
+        <source src="WhatsApp Video 2025-11-22 at 10.23.55_57bae3ed.mp4" type="video/mp4" />
+        your browser does not support the video tag.
+    </video>
+</div>
+
+<div id="sceneText">Welcome! Play the video </div>
+
+<div id="uiBox" class="box hidden">
+ <p id="boxText">waiting for cue...</p>
+</div>
+
+<div>
+    <button onclick="toggle()">Play / pause</button>
+      <button onclick="rewind()"> Rewind</button>
+        <button onclick="fastForward()"> Fast Forward</button>
+          <button onclick="slowMotion()">Slow Motion</button>
+            <button onclick="normalSpeed()">Normal Speed</button>
+</div>
+
+<button id="sceneBtn">Jump to scene 2</button>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
